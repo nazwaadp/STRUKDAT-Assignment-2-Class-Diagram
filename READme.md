@@ -17,8 +17,6 @@ Kasus ini dipilih karena dekat dengan kehidupan sehari-hari dan cukup relevan un
 
 ## Class Diagram
 
-![DIAGRAM](<assets/Str Int Flow-2026-03-25-053120.png>)
-
 ```mermaid
 ---
 config:
@@ -135,7 +133,7 @@ public class AppCuciMotor { // class induk
 // abstract class = class induk umum untuk semua layanan cuci
 abstract class WashService {
 
-    // ENCAPSULATION = data pelanggan dibungkus di dalam class
+    // ENCAPSULATION = data pelanggan di dalam class
     protected String customerName;
     protected String plateNumber;  
     protected String motorType;
@@ -182,7 +180,7 @@ abstract class WashService {
     }
 }
 
-// INHERITANCE = RegularWash mewarisi WashService
+// INHERITANCE = RegularWash turunan dari WashService
 class RegularWash extends WashService {
 
     // constructor class RegularWash
@@ -197,7 +195,7 @@ class RegularWash extends WashService {
     }
 }
 
-// INHERITANCE = WaxCleaning juga mewarisi WashService
+// INHERITANCE = WaxCleaning turunan dari WashService
 class WaxCleaning extends WashService {
 
     // constructor class WaxCleaning
@@ -246,7 +244,7 @@ Prinsip encapsulation terlihat pada atribut seperti `customerName`, `plateNumber
 
 ### 3. Inheritance
 
-Prinsip inheritance diterapkan pada `RegularWash` dan `WaxCleaning` yang mewarisi class `WashService`. Dengan begitu, kedua class tersebut dapat menggunakan atribut dan method yang sudah dimiliki parent class tanpa perlu menuliskannya kembali.
+Prinsip inheritance diterapkan pada `RegularWash` dan `WaxCleaning` yang merupakan turunan dari class `WashService`. Dengan begitu, kedua class tersebut dapat menggunakan atribut dan method yang sudah dimiliki parent class tanpa perlu menuliskannya kembali.
 
 ### 4. Polymorphism
 

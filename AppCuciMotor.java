@@ -53,7 +53,7 @@ public class AppCuciMotor { // class induk
 // abstract class = class induk umum untuk semua layanan cuci
 abstract class WashService {
 
-    // ENCAPSULATION = data pelanggan dibungkus di dalam class
+    // ENCAPSULATION = data pelanggan di dalam class
     protected String customerName;
     protected String plateNumber;  
     protected String motorType;
@@ -100,7 +100,7 @@ abstract class WashService {
     }
 }
 
-// INHERITANCE = RegularWash mewarisi WashService
+// INHERITANCE = RegularWash turunan dari WashService
 class RegularWash extends WashService {
 
     // constructor class RegularWash
@@ -115,7 +115,7 @@ class RegularWash extends WashService {
     }
 }
 
-// INHERITANCE = WaxCleaning juga mewarisi WashService
+// INHERITANCE = WaxCleaning turunan dari WashService
 class WaxCleaning extends WashService {
 
     // constructor class WaxCleaning
